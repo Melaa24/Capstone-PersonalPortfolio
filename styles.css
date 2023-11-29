@@ -22,3 +22,13 @@ nav > a {
     padding-left: 20px;
     text-decoration: none;
 }
+
+#profile-img {
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 15%;
+    border: 3px solid black;
+}
