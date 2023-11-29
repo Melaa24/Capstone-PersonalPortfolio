@@ -4,3 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    background-color: #1f6622;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav {
+    font-size: 25px;
+    margin-right: 35px;
+}
+
+nav > a {
+    color: #f5f3f0;
+    padding-left: 20px;
+    text-decoration: none;
+}
