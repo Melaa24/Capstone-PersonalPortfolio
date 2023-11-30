@@ -16,11 +16,21 @@
         </nav>
     </header>
     <main>
+<!--        About section-->
         <div id="about">
             <h2>About Me</h2>
             <img src="photos/profile-picture.jpg" alt="Image of Andrea at work" id="profile-img" />
-            <p id="bio">Italian-American woman living in New Hampshire.  Mom of 3 humans, 9 chickens and a dog.</p>
+            <p>
+                Italian-American woman living in New Hampshire.  Wife of 1 amazing human. Mom of 3 humans, 9 chickens and a dog. <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
         </div>
+        <hr>
+
+<!--        Skills section-->
         <div id="skills">
             <h2>Skills</h2>
             <ul>
@@ -31,23 +41,53 @@
                 <li>AWS</li>
             </ul>
         </div>
+
+<!--        This section goes over projects using figures to show what the project is-->
         <div id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li><a href="#" target="_blank">AWSM - Agent Service Workstation Manager</a></li>
-                <li><a href="#" target="_blank">OpenPages ERM Services</a></li>
-                <li><a href="#" target="_blank">OpenPages User Lookup Tool</a></li>
-                <li><a href="#" target="_blank">Compliance Helpline Integration</a></li>
-                <li><a href="#" target="_blank">LRN User Integration</a></li>
-            </ul>
+            <div id="card">
+                <a href="#" target="_blank">
+                    <figure>
+                        <img src="photos/AWSM.png" alt="Agent Service Workstation Manager" class="project-img"/>
+                        <figcaption>AWSM - Agent Service Workstation Manager</figcaption>
+                    </figure>
+                </a>
+                <a href="#" target="_blank">
+                    <figure>
+                        <img src="photos/ERM.png" alt="OpenPages ERM Services" class="project-img"/>
+                        <figcaption>OpenPages ERM Services</figcaption>
+                    </figure>
+                </a>
+                <a href="#" target="_blank">
+                    <figure>
+                        <img src="photos/OPULT.png" alt="OpenPages User Lookup Tool" class="project-img"/>
+                        <figcaption>OpenPages User Lookup Tool</figcaption>
+                    </figure>
+                </a>
+                <a href="#" target="_blank">
+                    <figure>
+                        <img src="photos/compliance.jpeg" alt="Compliance Helpline Integration" class="project-img"/>
+                        <figcaption>Compliance Helpline Integration</figcaption>
+                    </figure>
+                </a>
+                <a href="#" target="_blank">
+                    <figure>
+                        <img src="photos/LRN.png" alt="LRN User Integration" class="project-img"/>
+                        <figcaption>LRN User Integration</figcaption>
+                    </figure>
+                </a>
+            </div>
         </div>
+
+<!--        Contact Form-->
         <div id="contact">
-            <form>
+            <h2>Contact Me</h2>
+            <form id="form">
                 <label for="fullname">Full Name: </label>
                 <input type="text" id="fullname" name="fullname">
-                <label for="email">email: </label>
+                <label for="email">Email: </label>
                 <input type="text" id="email" name="email">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="submit">
             </form>
         </div>
     </main>

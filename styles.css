@@ -5,11 +5,16 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 header {
     background-color: #1f6622;
     padding: 10px;
     display: flex;
-    flex-direction: row-reverse;
 }
 
 nav {
@@ -23,12 +28,121 @@ nav > a {
     text-decoration: none;
 }
 
+nav > a:hover {
+    color: black;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#about > h2, p {
+    padding: 20px;
+    margin: 20px;
+}
+
+#about > h2 {
+    align-self: flex-start;
+}
+
+#about > p {
+    font-size: 20px;
+    border: 1px solid black;
+    flex-basis: 50%;
+    line-height: 175%;
+}
+
+#about > p:first-letter {
+    color: #1f6622;
+    background-color: #d7d9d7;
+    border-radius: 2px;
+    box-shadow: 4px 4px 0 black;
+    font-size: 350%;
+    padding: 8px 3px;
+    margin-right: 6px;
+    float: left;
+}
+
 #profile-img {
     width: 200px;
     height: auto;
     padding: 5px;
     margin-top: 10px;
     margin-left: 10px;
-    border-radius: 15%;
+    border-radius: 50%;
     border: 3px solid black;
 }
+
+#skills, #projects, #contact {
+  padding: 25px;
+    justify-content: space-around;
+}
+
+#skills > ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skills > ul > li {
+    padding: 10px 30px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    background-color: #1f6622;
+    color: #d7d9d7;
+    border-radius: 9%;
+}
+
+#card {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#card > a {
+    padding: 10px 30px;
+    margin-left: 25px;
+    background-color: #1f6622;
+    color: #d7d9d7;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-img {
+    width: 300px;
+    height: auto;
+}
+
+#contact {
+    max-width: 300px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+}
+
+#submit {
+    background-color: #1f6622;
+    color: #d7d9d7;
+    margin-top: 10px;
+    max-width: 100px;
+    padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+    nav > a {
+        display: block;
+    }
+    #about {
+        flex-direction: column;
+    }
+}
+
